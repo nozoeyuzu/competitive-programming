@@ -27,11 +27,11 @@
 #         exit()
 # print('No')
 
-S = input().strip()
-baggage = []
+# S = input().strip()
+# baggage = []
 
-for i in range(len(S)):
-    if S[i] == '#':
-        baggage.append(i+1)
-for i in range(0,len(baggage),2):
-    print(f"{baggage[i]},{baggage[i+1]}")
+# for i in range(len(S)):
+#     if S[i] == '#':
+#         baggage.append(i+1)
+# for i in range(0,len(baggage),2):
+#     print(f"{baggage[i]},{baggage[i+1]}")
