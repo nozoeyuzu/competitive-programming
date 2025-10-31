@@ -28,3 +28,25 @@
 #     S.append(c_list[i]*l_list[i])
 
 # print(''.join(S))
+
+#ABC413
+# N, M = map(int, input().split())
+# A = list(map(int,input().split()))
+
+# if sum(A) <= M:
+#     print('Yes')
+# else:
+#     print('No')
+
+N = int(input())
+S = [input().strip() for _ in range(N)]
+result = []
+
+for i in range(N):
+    for j in range(N):
+        if i == j:
+            continue
+        new_S = S[i]+S[j]
+        if new_S not in result:
+            result.append(new_S)
+print(len(result))
