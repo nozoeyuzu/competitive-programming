@@ -22,3 +22,24 @@
 #             print('No')
 #             exit()
 # print('Yes')
+
+#ABC411
+# P = input().strip()
+# L = int(input())
+
+# if len(P) >= L:
+#     print('Yes')
+# else:
+#     print('No')
+
+N = int(input())
+D = list(map(int, input().split()))
+pos = [0]*N
+for i in range(1,N):
+    pos[i] = pos[i-1] + D[i-1]
+
+for i in range(N-1):
+    distance = []
+    for j in range(i+1, N):
+        distance.append(pos[j]-pos[i])
+    print(*distance)
