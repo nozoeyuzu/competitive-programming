@@ -14,3 +14,14 @@
 #         exit()
 # print(ans)
 
+#ABC_399
+# N = int(input())
+# S = list(input().strip())
+# T = list(input().strip())
+# count = 0
+
+# for i in range(N):
+#     if S[i] != T[i]:
+#         count+=1
+# print(count)
+
